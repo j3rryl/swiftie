@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable react/prop-types */
-
 import * as THREE from "three";
 import { useRef, useMemo } from "react";
 import { extend, useFrame, useThree } from "@react-three/fiber";

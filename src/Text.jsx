@@ -1,10 +1,6 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/display-name */
 import * as THREE from "three";
 import { forwardRef, useLayoutEffect, useRef, useMemo } from "react";
-import { useLoader } from "@react-three/fiber";
+// import { useLoader } from "@react-three/fiber";
 
 const Text = forwardRef(
   (
@@ -18,8 +14,8 @@ const Text = forwardRef(
     },
     ref
   ) => {
-    const font = useLoader(THREE.FontLoader, "/bold.blob");
-    const config = useMemo(() => ({ font, size: 40, height: 50 }), [font]);
+    // const font = useLoader(THREE.FontLoader, "/bold.blob");
+    const config = useMemo(() => ({ size: 40, height: 50 }));
     const mesh = useRef();
     useLayoutEffect(() => {
       const size = new THREE.Vector3();
