@@ -1,6 +1,9 @@
 import * as THREE from "three";
 import { forwardRef, useLayoutEffect, useRef, useMemo } from "react";
+import { extend } from "@react-three/fiber";
+import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
 // import { useLoader } from "@react-three/fiber";
+extend({ TextGeometry });
 
 const Text = forwardRef(
   (

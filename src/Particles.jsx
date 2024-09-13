@@ -25,7 +25,7 @@ export default function Particles({ count, mouse }) {
     return temp;
   }, [count]);
   // The innards of this hook will run every frame
-  useFrame(() => {
+  useFrame((state) => {
     // Makes the light follow the mouse
     light.current.position.set(
       mouse.current[0] / aspect,

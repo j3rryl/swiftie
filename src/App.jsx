@@ -27,7 +27,6 @@ function App() {
       {/* <fog attach="fog" args={['white', 50, 190]} /> */}
 
       <pointLight distance={100} intensity={4} color="white" />
-      <Number mouse={mouse} hover={setHover} />
 
       <Particles count={isMobile ? 5000 : 1_000} mouse={mouse} />
     </Canvas>

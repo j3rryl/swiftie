@@ -51,7 +51,7 @@ const Number = ({ hover }) => {
     <Suspense fallback={null}>
       <group ref={ref}>
         <Text
-          size={10}
+          size={80}
           onClick={(e) =>
             window.open(
               "https://github.com/react-spring/react-three-fiber/blob/master/whatsnew.md",
